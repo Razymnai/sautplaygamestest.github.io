@@ -1,0 +1,404 @@
+<!-- Магазин -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="source/styles/mycss.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg bg-back">
+      <div class="container-fluid">
+        <!-- логотип -->
+        <a class="navbar-brand" href="/"><img src="source/files/logotip.png" alt="logo"></a>
+
+        <!-- бургер/батон (появляется если сузить сайт горизонтальным образом) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav">
+            <!-- Вкладка магазин -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Shop</a>
+            </li>
+            <!-- Вкладка каталог -->
+            <li class="nav-item">
+              <a class="nav-link" href="Library.html">Library</a>
+            </li>
+            <!-- Вкладка сообщество -->
+            <li class="nav-item">
+              <a class="nav-link" href="Community.html">Community</a>
+            </li>
+            <!-- Вкладка блог -->
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html">Blog</a>
+            </li>
+            <!-- Вкладка стримы -->
+            <li class="nav-item">
+              <a class="nav-link" href="Streams.html">Streams</a>
+            </li>
+            <!-- Вкладка друзья -->
+            <li class="nav-item">
+              <a class="nav-link" href="Friends.html">Friends</a>
+            </li>
+            <!-- Вкладка профиль -->
+            <li class="nav-item mp-4">
+              <a class="nav-link" href="Profile.html">Profile</a>
+            </li>
+            <!-- Поиск -->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+
+  <section>
+    <div>
+      <div class="container-fluid mt-4">
+        <div class="row">
+
+          <!-- <div class="col-xl-1"> левая сторона -->
+
+
+
+          <!-- </div> -->
+
+
+          <div class="col-xl-9 col-md-12"> <!-- основной контент -->
+
+
+            <div id="carouselExampleCaptions" class="carousel slide"> <!-- карусель/подписи -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="source/files/Farcry_IV-game.jpg" class="d-block w-100" alt="Farcry_IV">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Mafia III</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="source/files/The_Walking_Dead-game.webp" class="d-block w-100" alt="The_Walking_Dead">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>The Walking Dead</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="source/files/Mafia_III-game.webp" class="d-block w-100" alt="Mafia_III">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Farcry IV</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+
+            <div class="row"> <!-- КАРТА ТОВАРА/ИГРЫ НА ВЫБОР -->
+              <div class="col-lg-4 col-md-6 mt-4"> <!-- 1 КАРТА ТОВАРА/ИГРЫ НА ВЫБОР 1 /GTFO/ -->
+
+                <div class="card">
+                  <img src="source/files/GTFO-game.jpg" class="card-img-top" alt="GTFO">
+                  <div class="card-body">
+                    <h5 class="card-title">GTFO</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                    <a href="#" class="btn btn-primary">Buy a game</a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4"> <!-- 2 КАРТА ТОВАРА/ИГРЫ НА ВЫБОР 2 /RUST/ -->
+
+                <div class="card">
+                  <img src="source/files/Rust-game.webp" class="card-img-top" alt="RUST">
+                  <div class="card-body">
+                    <h5 class="card-title">Rust</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                    <a href="#" class="btn btn-primary">Buy a game</a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4"> <!-- 3 КАРТА ТОВАРА/ИГРЫ НА ВЫБОР 3 /MC 11/ -->
+
+                <div class="card">
+                  <img src="source/files/Mortal_Combat_11-game.jpg" class="card-img-top" alt="MC11">
+                  <div class="card-body">
+                    <h5 class="card-title">Mortal Combat 11</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                    <a href="#" class="btn btn-primary">Buy a game</a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4"> <!-- 4 КАРТА ТОВАРА/ИГРЫ НА ВЫБОР 4 /Cyberpunk 2077/ -->
+
+                <div class="card">
+                  <img src="source/files/Cyberpunk_2077-game.webp" class="card-img-top" alt="Cyberpunk_2077">
+                  <div class="card-body">
+                    <h5 class="card-title">Cyberpunk 2077</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                    <a href="#" class="btn btn-primary">Buy a game</a>
+                  </div>
+                </div>
+
+
+
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4"> <!-- 5 КАРТА ТОВАРА/ИГРЫ НА ВЫБОР 5 /Dead by Daylight/ -->
+
+                <div class="card">
+                  <img src="source/files/Dead_by_Daylight-game.webp" class="card-img-top" alt="Dead_by_Daylight">
+                  <div class="card-body">
+                    <h5 class="card-title">Dead by Daylight</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                    <a href="#" class="btn btn-primary">Buy a game</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4"> <!-- 6 КАРТА ТОВАРА/ИГРЫ НА ВЫБОР 6 /Far Cry 3/ -->
+
+                <div class="card">
+                  <img src="source/files/Far_Cry_3-game.webp" class="card-img-top" alt="Far_Cry_3">
+                  <div class="card-body">
+                    <h5 class="card-title">Far Cry 3</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                    <a href="#" class="btn btn-primary">Buy a game</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4"> <!-- 7 КАРТА ТОВАРА/ИГРЫ НА ВЫБОР 7 /Nier: Automata/ -->
+
+                <div class="card">
+                  <img src="source/files/Nier_Automata-game.webp" class="card-img-top" alt="Nier:_Automata">
+                  <div class="card-body">
+                    <h5 class="card-title">Nier: Automata</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                    <a href="#" class="btn btn-primary">Buy a game</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4"> <!-- 8 КАРТА ТОВАРА/ИГРЫ НА ВЫБОР 8 /GTA5/ -->
+
+                <div class="card">
+                  <img src="source/files/GTA5-game.webp" class="card-img-top" alt="GTA5">
+                  <div class="card-body">
+                    <h5 class="card-title">GTA5</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                    <a href="#" class="btn btn-primary">Buy a game</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-4"> <!-- 9 КАРТА ТОВАРА/ИГРЫ НА ВЫБОР 9 /Metro Last Light/ -->
+
+                <div class="card">
+                  <img src="source/files/Metro_last_Light-game.webp" class="card-img-top" alt="Metro_Last_Light">
+                  <div class="card-body">
+                    <h5 class="card-title">Metro Last Light</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                    <a href="#" class="btn btn-primary">Buy a game</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xl-3 col-md-12 sidebar"> <!-- правая сторона -->
+            <div class="row">
+              <div class="col-4">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                  <nav class="nav nav-pills flex-column">
+                    <a class="nav-link" href="#Filters">Filters</a>
+                    <nav class="nav nav-pills flex-column">
+                      <a class="nav-link ms-3 my-1" href="#Price">Price</a>
+                      <a class="nav-link ms-3 my-1" href="#Year of release">Year of release</a>
+                      <a class="nav-link ms-3 my-1" href="#Genre">Genre</a>
+                    </nav>
+                  </nav>
+                </nav>
+              </div>
+
+              <div class="col-8">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                  class="scrollspy-example-2" tabindex="0">
+                  <div id="Filters"> <!-- Фильтры -->
+                    <h4>Filters</h4>
+                    <div class="col-xl-9 mb-3"> <!-- Enter the game -->
+                      <label for="formGroupExampleInput" class="form-label">Enter the game</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter the game">
+                    </div>
+                  </div>
+                  <div id="Price"> <!-- Цена -->
+                    <h5>Price</h5>
+                    
+                    <div class="col-xl-9 mb-3"> <!-- Цена до -->
+                      <label for="formGroupExampleInput01" class="form-label">Adjust the price</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput01" placeholder="Until how much">
+                    </div>
+
+                  </div>
+                  <div id="Year of release"> <!-- Год выпуска -->
+                    <h5>Year of release</h5>
+                    
+                    <div class="col-xl-9 mb-3"> <!-- с ХХХХ года -->
+                      <label for="formGroupExampleInput" class="form-label">from</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="from XXXX">
+                    </div>
+                    <div class="col-xl-9 mb-3"> <!-- до ХХХХ года -->
+                      <label for="formGroupExampleInput2" class="form-label">to</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="to XXXX">
+                    </div>
+
+                  </div>
+                  <div id="Genre"> <!-- Жанр -->
+                    <h5>Genre</h5>
+                    
+                    <div class="form-check form-check-inline col-md-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Strategy</label>
+                    </div>
+                    <div class="form-check form-check-inline col-md-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">MMO</label>
+                    </div>
+
+                    <div class="form-check form-check-inline col-md-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Role-playing</label>
+                    </div>
+                    <div class="form-check form-check-inline col-md-5">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">Puzzle</label>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <footer>
+    
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <strong>About the site</strong>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Gaming site: The site is a platform where you can download, install and play games</p> <!-- сайт о... -->
+            <p>Developed in: Designed with HTML CSS Javascript codes </p> <!-- разработан в... -->
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <strong>About the site developers</strong>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Contacts: 89766248081</p>
+            <p>Contacts: smailfrend79123@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <strong>Technical support</strong>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary">Found a problem</button>
+              <button type="button" class="btn btn-primary">what is how it works</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

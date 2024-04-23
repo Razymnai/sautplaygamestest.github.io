@@ -1,0 +1,36 @@
+body {
+        background: linear-gradient(180deg, #5D64A4 0%, #4c549d 100%);
+}
+/* неактивная страница/в странице не зашёл */
+.nav-link {
+        color:rgb(80, 80, 80)
+}
+/* активная страница/в странице зашёл */
+.navbar-nav .nav-link.active {
+        color:rgb(232, 232, 232)
+}
+/* размер логотипа */
+.navbar-brand img {
+        width: 35px;
+}
+/* фон бургера/батона (появляется если сузить сайт горизонтальным образом) */
+.navbar-toggler {
+        color: rgb(100, 120, 220);
+        background-color: rgb(150, 160, 245);
+}
+/* фон названия страницы */
+.nav-item {
+        background-color: rgb(96, 109, 220);
+}
+/* главный фон хедера */
+.bg-back {
+        background-color: rgb(96, 109, 220);
+}
+
+.sidebar {
+        color:rgb(255, 255, 255);
+        background: linear-gradient(90deg, #96A0F5 0%, #4c549d 100%);
+        
+}
+
+
